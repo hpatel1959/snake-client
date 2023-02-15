@@ -1,5 +1,7 @@
 const net = require('net');
 
+// const setupInput = require('./input').setupInput;
+
 const connect = function() {
   const conn = net.createConnection({
     host: '165.227.47.243',

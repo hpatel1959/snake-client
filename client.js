@@ -7,10 +7,7 @@ const connect = function() {
   });
 
   conn.on('connect', () => {
-    console.log("Connected to the game server!")
-  });
-
-  conn.on('connect', () => {
+    console.log("Connected to the game server!");
     conn.write('Name: HDP');
   });
 

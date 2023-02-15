@@ -6,6 +6,14 @@ const connect = function() {
     port: 50541
   });
 
+  conn.on('connect', () => {
+    console.log("Connected to the game server!")
+  });
+
+  conn.on('connect', () => {
+    conn.write('Name: HDP');
+  });
+
   conn.on('data', (data) => {
     console.log(data);
   });

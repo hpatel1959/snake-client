@@ -1,6 +1,6 @@
 const net = require('net');
 
-// const setupInput = require('./input').setupInput;
+const messagesArr = ['Hi', 'Bye', 'Ok', 'Mine!', "crash"];
 
 const connect = function() {
   const conn = net.createConnection({
